@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom scrollbar styles */
+.scrollable-element::-webkit-scrollbar {
+  width: 12px; /* Medium scrollbar width */
+}
+
+.bungee-tint-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bungee-tint-regular2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.scrollable-element::-webkit-scrollbar-track {
+  background: #18191906; /* Track color */
+}
+
+.scrollable-element::-webkit-scrollbar-thumb {
+  background: #02a340; /* Scrollbar color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.scrollable-element::-webkit-scrollbar-thumb:hover {
+  background: #0aaf5f; /* Scrollbar color on hover */
+}
