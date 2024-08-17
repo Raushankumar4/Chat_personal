@@ -106,7 +106,7 @@ const ChatApp = () => {
           <button
             className="bg-green-500 text-white font-semibold px-4 py-2 rounded-md"
             type="button"
-            onClick={() => username === "" ? aler("Please Enter Your Name") : username.trim() && setChatActive(true)}
+            onClick={() => username.trim() === " " ? alert("Please Enter Your Name") : username.trim() && setChatActive(true)}
           >
             Start Chat
           </button>
