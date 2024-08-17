@@ -44,7 +44,7 @@ const ChatApp = () => {
   return (
     <div className="w-screen h-screen bg-gray-100 flex justify-center items-center">
       {chatActive ? (
-        <div className="rounded-md w-full md:w-[80vw] lg:w-[40vw] h-[90vh] mx-auto flex flex-col">
+        <div className="rounded-md w-full md:w-[80vw] lg:w-[40vw] h-[60vh] mx-auto flex flex-col">
           <h1 className="tracking-wider text-center font-bold drop-shadow-md shadow-green-600 lg:text-4xl text-2xl my-4 bungee-tint-regular">
             Chat Room
           </h1>
