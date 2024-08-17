@@ -98,7 +98,7 @@ const ChatApp = () => {
           </h1>
           <input
             value={username}
-            onChange={(e) => username === "" ? aler("Please Enter Your Name") : setUserName(e.target.value)}
+            onChange={(e) =>  setUserName(e.target.value)}
             type="text"
             className="text-center px-3 py-2 border border-gray-300 rounded-md"
             placeholder="Enter Your Name !"
@@ -106,7 +106,7 @@ const ChatApp = () => {
           <button
             className="bg-green-500 text-white font-semibold px-4 py-2 rounded-md"
             type="button"
-            onClick={() => username.trim() && setChatActive(true)}
+            onClick={() => username === "" ? aler("Please Enter Your Name") : username.trim() && setChatActive(true)}
           >
             Start Chat
           </button>
