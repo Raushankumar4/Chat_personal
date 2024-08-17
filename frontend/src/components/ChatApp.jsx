@@ -101,7 +101,7 @@ const ChatApp = () => {
             onChange={(e) =>  setUserName(e.target.value)}
             type="text"
             className="text-center px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-400 outline-none"
-            placeholder="Please Enter!"
+            placeholder="Please Enter !"
           />
           <button
             className="bg-green-500 text-white font-semibold px-4 py-2 rounded-md"
