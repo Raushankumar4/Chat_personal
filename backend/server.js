@@ -36,3 +36,6 @@ io.on("connection", (socket) => {
 server.listen(process.env.PORT, () => {
   console.log("server is running port 5000");
 });
+app.get("/", (req, res) => {
+  res.json("Server is runnining bro chill !");
+});
