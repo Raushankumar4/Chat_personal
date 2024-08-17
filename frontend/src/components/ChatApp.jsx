@@ -94,14 +94,14 @@ const ChatApp = () => {
       ) : (
         <div className="flex flex-col items-center justify-center gap-3">
           <h1 className="font-semibold text-2xl drop-shadow-2xl shadow-gray-700">
-            Enter UserName
+            Enter Your Name
           </h1>
           <input
             value={username}
-            onChange={(e) => setUserName(e.target.value)}
+            onChange={(e) => username === "" ? aler("Please Enter Your Name") : setUserName(e.target.value)}
             type="text"
             className="text-center px-3 py-2 border border-gray-300 rounded-md"
-            placeholder="Enter your username"
+            placeholder="Enter Your Name !"
           />
           <button
             className="bg-green-500 text-white font-semibold px-4 py-2 rounded-md"
